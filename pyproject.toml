@@ -1,0 +1,25 @@
+[project]
+name = "qwen3vl-lora-rsrcc"
+version = "0.1.0"
+description = "Modularized repository for fine-tuning Qwen3-VL on the RSRCC dataset using LoRA and MLflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2.0",
+    "torchao>=0.4.0",
+    "transformers>=4.40.0",
+    "datasets>=2.18.0",
+    "accelerate>=0.28.0",
+    "peft>=0.10.0",
+    "trl>=0.8.0",
+    "huggingface-hub>=0.22.0",
+    "bitsandbytes>=0.46.1",
+    "mlflow>=2.11.0",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "tqdm>=4.66.0",
+    "flash-attn>=2.5.0; sys_platform == 'linux'",
+]
+
+[dependency-groups]
+dev = []
