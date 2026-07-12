@@ -1,6 +1,13 @@
 # Terra: Qwen3-VL LoRA fine-tuning on RSRCC
 
+![Demo](demo/teaser.png)
+
 We fine-tuned the `Qwen/Qwen3-VL-4B-Instruct` VLMon the `google/RSRCC` dataset.
+Small VLMs are excellent at describing a single image, but they struggle with
+temporal and bi-temporal remote sensing tasks. When given two aerial images
+taken at different times ($T_0$ and $T_1$), generic models often fail to capture
+subtle differences, suffer from hallucinations, or confuse the chronological
+order of events.
 
 ## Installation
 
